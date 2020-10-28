@@ -1,14 +1,12 @@
 {
   "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "REPLACE.WITH.YOUR.REPOSITORY.URI/sample-repository:latest",
+    "Update": "true"
+  },
   "Ports": [
     {
-      "ContainerPort": "80"
-    }
-  ],
-  "Volumes": [
-    {
-      "HostDirectory": "/mnt/efs",
-      "ContainerDirectory": "/usr/share/nginx/www/efs"
+      "ContainerPort": "5000"
     }
   ]
 }
